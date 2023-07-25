@@ -32,9 +32,9 @@ allProducts.forEach(function (product) {
   productAddBtn.className = "btn btn-primary shop-item-button";
   productDetailContainer.append(productPriceSpan, productAddBtn);
   productContainer.append(
-    productDetailContainer,
     productTitleSpan,
-    productImageElem
+    productImageElem,
+    productDetailContainer
   );
   shopItemsContainer.append(productContainer);
 });
