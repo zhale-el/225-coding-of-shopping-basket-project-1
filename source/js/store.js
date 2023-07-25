@@ -30,4 +30,11 @@ allProducts.forEach(function (product) {
   let productAddBtn = document.createElement("button");
   productAddBtn.innerHTML = "Add to cart";
   productAddBtn.className = "btn btn-primary shop-item-button";
+  productDetailContainer.append(productPriceSpan, productAddBtn);
+  productContainer.append(
+    productDetailContainer,
+    productTitleSpan,
+    productImageElem
+  );
+  shopItemsContainer.append(productContainer);
 });
